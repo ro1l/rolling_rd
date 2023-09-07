@@ -1,0 +1,14 @@
+.toast {
+  background: black;
+  border: 2px solid white;
+  color: white;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+
+  .toast {
+    width: 50%;
+  }
+}

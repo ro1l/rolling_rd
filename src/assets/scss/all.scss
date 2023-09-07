@@ -1,0 +1,73 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/mixins";
+@import "variables";
+@import "~bootstrap/scss/bootstrap";
+@import "card";
+@import "modal";
+// @import "~bootstrap/scss/variables-dark";
+// @import "~bootstrap/scss/maps";
+// @import "~bootstrap/scss/root";
+
+// dashboard
+@import "dashboard";
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Gujarati:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: 'TaipeiSansTC';
+  src: url('~@/assets/fonts/TaipeiSansTCBeta-Light.ttf') format('truetype');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'TaipeiSansTC';
+  src: url('~@/assets/fonts/TaipeiSansTCBeta-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'TaipeiSansTC';
+  src: url('~@/assets/fonts/TaipeiSansTCBeta-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+// dark-mode
+@import "base";
+@import "dark-mode";
+@import "mode-toggle";
+
+// view
+@import "cart";
+@import "home";
+@import "products";
+@import "product";
+@import "comparison";
+@import "articles";
+@import "article";
+@import "search";
+@import "checkout";
+@import "order";
+@import "not-found";
+
+// component
+@import "footer";
+@import "logo-nav";
+@import "media-scrolled";
+@import "navbar";
+@import "page-title";
+@import "_page-title-sm";
+@import "_breadcrumb";
+@import "products-card";
+@import "products-skeleton";
+@import "reversed-articles";
+@import "tax-modal";
+@import "carousel";
+
+@import "pagination";
+@import "toast";
+@import "toast-list";

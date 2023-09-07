@@ -1,0 +1,259 @@
+.comparison-box {
+  .table-box {
+    text-align: center;
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+
+    .add-data {
+      width: 300px;
+      padding-bottom: 2rem;
+
+      a {
+        position: sticky;
+        top: 5rem;
+        display: inline-block;
+        width: 70%;
+        height: calc(300px - 4rem);
+        line-height: calc(300px - 4rem);
+        margin-top: 2rem;
+        border: 1px solid;
+      }
+    }
+
+    table {
+
+      a {
+        vertical-align: middle;
+        margin: 0;
+        padding: 0;
+      }
+
+      .img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        img {
+          width: 200px;
+          height: 130px;
+          object-fit: cover;
+        }
+
+        p {
+          margin-top: 1rem;
+          width: 100%;
+        }
+      }
+
+      th {
+        width: 100px;
+        font-weight: 300;
+      }
+
+      td {
+        width: 300px;
+
+        p {
+          margin: 0;
+        }
+      }
+
+      tr {
+        border-bottom: $light-underline;
+        height: 100px;
+
+        &.car-model {
+          position: relative;
+          height: 250px;
+          position: sticky;
+          top: 3rem;
+          // box-shadow: 0px 1px $light-text-shallow;
+        }
+
+        &.img-box {
+          height: 250px;
+          box-sizing: border-box;
+          position: sticky;
+          top: 3rem;
+          // box-shadow: 0px 1px $light-text-shallow;
+        }
+
+        &.remove {
+          height: 50px;
+          border: none;
+
+          button {
+            width: 100%;
+            display: inline-block;
+            text-align: right;
+            padding: 10px;
+            border: none;
+            background: none;
+            font-weight: 300;
+            text-decoration: underline;
+            text-underline-offset: 0.3rem;
+            text-decoration-thickness: 1px;
+            font-size: 0.9rem;
+            z-index: 1000;
+          }
+        }
+
+        &.first-tr {
+          height: 50px;
+          border: none;
+        }
+      }
+    }
+  }
+
+  .no-data {
+    margin-top: 2rem;
+    width: 100%;
+    padding: 2rem 5rem;
+
+    a {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+
+      h5 {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0 3.5rem;
+        font-weight: 300;
+      }
+
+      .methods {
+        margin-top: 1rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+
+        .item {
+          width: 350px;
+          height: 350px;
+          border: 1px solid;
+          display: flex;
+          flex-wrap: wrap;
+          box-sizing: border-box;
+          align-items: center;
+          align-self: center;
+          justify-content: center;
+          padding: 2rem;
+          position: relative;
+
+          .example-box {
+            width: 100%;
+            height: 80%;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            &:nth-child(2) {
+              align-content: start;
+            }
+
+            img {
+              width: 70%;
+            }
+
+            p {
+              font-size: 2rem;
+              line-height: 2rem;
+              margin: 0;
+              padding: 0;
+              display: inline-block;
+
+              &:nth-child(2) {
+                text-align: left;
+                width: 100%;
+                justify-self: start;
+                padding: 0rem 3rem 5rem;
+                font-size: 1rem;
+              }
+            }
+          }
+
+          p {
+            height: 20%;
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 1rem;
+            display: inline-block;
+            padding: 0;
+            padding-top: 1rem;
+
+            strong {
+              font-size: 1.3rem;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .comparison-box {
+    .table-box {
+      .add-data {
+        a {
+          height: calc(200px - 4rem);
+          line-height: calc(200px - 4rem);
+        }
+      }
+
+      table {
+        .img {
+          img {
+            width: 100px;
+            height: 70px;
+          }
+        }
+
+        tr {
+          height: 90px;
+
+          &.car-model {
+            height: 200px;
+          }
+
+          &.img-box {
+            height: 200px;
+          }
+        }
+      }
+    }
+
+    .no-data {
+      padding: 0 2rem;
+
+      a {
+        h5 {
+          padding: 0;
+          margin: 0;
+        }
+
+        .methods {
+          flex-wrap: wrap;
+          margin-top: 2rem;
+
+          .item {
+            height: 300px;
+            margin-bottom: 2rem;
+
+            .example-box {
+              img {
+                width: 60%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

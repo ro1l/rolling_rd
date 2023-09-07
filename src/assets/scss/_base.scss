@@ -1,0 +1,235 @@
+$light-bg: #fff;
+$light-text-shallow: #ababab;
+$light-text-middle: #696969;
+$light-text-deep: #000;
+$light-toggle-bg: #dadada;
+$light-border-btn: 1px solid $light-text-deep;
+$light-fill-btn-bg: $light-text-deep;
+$light-fill-btn-text: $light-bg;
+$light-underline: 1px solid $light-text-shallow;
+$dark-bg: #242424;
+
+*,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  background: $light-bg;
+  color: $light-text-middle;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 300;
+}
+
+table {
+  vertical-align: middle !important;
+}
+
+a {
+  text-decoration: none;
+  color: $light-text-middle;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+  background: none;
+  font-weight: 300;
+}
+
+input:focus {
+  background: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.h-80 {
+  margin-top: 80px;
+  background: #fff;
+}
+
+.border-btn {
+  text-align: center;
+  border: $light-border-btn;
+  display: inline-block;
+  padding: 0.5rem 5rem;
+}
+
+.fill-btn {
+  display: inline-block;
+  text-align: center;
+  padding: 0.5rem 5rem;
+  background: $light-fill-btn-bg;
+  color: $light-fill-btn-text;
+}
+
+.logo {
+  transition: 0.8s;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  border: 1px solid $light-text-middle;
+  border-radius: 1rem;
+  color: $light-text-middle;
+  display: inline-block;
+  margin: 0;
+}
+
+.text-white {
+  color: $light-bg;
+}
+
+.text-deep {
+  color: $light-text-deep;
+}
+
+.text-shallow {
+  color: $light-text-shallow;
+}
+
+.item-underline {
+  border-bottom: $light-underline;
+}
+
+.item-top-line {
+  border-top: $light-underline;
+}
+
+.table-bg {
+  background: rgba($light-bg, 0.9);
+}
+
+.border-box {
+  border: 1px solid $light-text-deep;
+  background: $light-bg;
+}
+
+.order-bg {
+  background: $light-bg;
+}
+
+.bg-color {
+  background: $light-bg;
+  transition: background-color 0.2s ease;
+}
+
+.bg-dark-color {
+  background: $dark-bg;
+}
+
+// modal
+.modal-mask {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-enter-from {
+  opacity: 0;
+}
+
+.modal-leave-to {
+  opacity: 0;
+}
+
+.modal-enter-from .modal-container,
+.modal-leave-to .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.load {
+  background: linear-gradient(
+      100deg,
+      rgba(256, 256, 256, 0) 30%,
+      rgba(256, 256, 256, 0.5) 50%,
+      rgba(256, 256, 256, 0) 30%
+    )
+    #ededed;
+  background-size: 200% 100%;
+  background-position-x: 180%;
+  animation: 2s loading ease-in-out infinite;
+}
+
+@keyframes loading {
+  to {
+    background-position-x: -20%;
+  }
+}
+
+*::-webkit-media-controls-panel {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+video::-webkit-media-controls-play-button {
+  display: none !important;
+}
+
+/* Old shadow dom for play button */
+
+video::-webkit-media-controls-play-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+
+*::--webkit-media-controls-play-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+/* New shadow dom for play button */
+
+/* This one works */
+
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+video::-webkit-media-controls-fullscreen-button {
+  display: none !important;
+}
+
+video::-webkit-media-controls-play-button {
+  display: none !important;
+} 
+
+video::-webkit-media-controls-timeline {
+  display: none !important;
+}
+
+video::-webkit-media-controls-current-time-display{
+  display: none !important;
+}
+
+video::-webkit-media-controls-time-remaining-display {
+  display: none !important;
+}
+
+video::-webkit-media-controls-mute-button {
+  display: none !important;
+}
+
+video::-webkit-media-controls-toggle-closed-captions-button { 
+  display: none !important; 
+}
+
+video::-webkit-media-controls-volume-slider {
+  display: none !important;
+}
+
+video::-webkit-media-controls-enclosure{
+  display: none !important;
+}
